@@ -1,4 +1,5 @@
-# Tic‑Tac‑Toe Game (Two‑Player)
+# Group: Romdoul CamTech
+# Project: Tic‑Tac‑Toe Game (Two‑Player)
 
 A console‑based two‑player Tic‑Tac‑Toe game with move validation, win/draw detection, replay option, and persistent score history.  
 Developed as a team project by 6 members, each responsible for a distinct module.
