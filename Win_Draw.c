@@ -3,11 +3,11 @@
 
 int attempts = 0;
 
-int checkWin(char board[3][3], char name[]){
+int checkWin(char board[3][3]){
     // checking row
     for (int i=0; i<3; i++){
         if (board[i][0] == board[i][1] && board[i][1] == board[i][2]){
-            if (board[i][0] == name[0]){
+            if (board[i][0] == 'X'){
                 return 1;
             }else{
                 return 2;
@@ -17,7 +17,7 @@ int checkWin(char board[3][3], char name[]){
     // check column
     for (int j=0; j<3; j++){
         if (board[0][j] == board[1][j] && board[1][j] == board[2][j]){
-            if (board[0][j] == name[0]){
+            if (board[0][j] == 'X'){
                 return 1;
             }else{
                 return 2;
@@ -26,7 +26,7 @@ int checkWin(char board[3][3], char name[]){
     }
     // check main diagonal
     if (board[0][0] == board[1][1] && board[1][1] == board[2][2]){
-        if (board[0][0] == name[0]){
+        if (board[0][0] == 'X'){
             return 1;
         }else{
             return 2;
@@ -34,7 +34,7 @@ int checkWin(char board[3][3], char name[]){
     }
     // check anti-diagonal
     if (board[0][2] == board[1][1] && board[1][1] == board[2][0]){
-        if (board[0][2] == name[0]){
+        if (board[0][2] == 'X'){
             return 1;
         }else{
             return 2;
